@@ -1,0 +1,105 @@
+/* Basic reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #2a2a2a; 
+    width: 100%; 
+    min-height: 15vh; 
+    height: auto;
+    position: relative; 
+    overflow: hidden;
+}
+
+.header .logo {
+    max-height: 8vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.header .logo img {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    color: #fff;
+    justify-content: center;
+    padding-top: 5rem;
+    margin-top: 1rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ccc
+}
+
+@media (max-width: 768px) {
+    .header {
+        min-height: 20vh;
+        padding: 0.5rem;
+    }
+    .header .logo {
+        max-height: 6vh;
+    }
+    .nav {
+        flex-direction: row;
+        padding-top: 2rem;
+    }
+}
+
+.hero {
+    background: #f4f4f4;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 5vh;
+    width: 100%;
+    min-height: 50vh;
+}
+
+.about, .services, .contact {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2a2a2a;
+    color: #fff;
+}
