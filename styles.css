@@ -24,7 +24,10 @@ body {
 }
 
 .header .logo {
-    max-height: 60px;
+    max-height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header .logo img {
@@ -33,6 +36,7 @@ body {
     width: auto;
     object-fit: contain;
     display: block;
+    margin: 0 auto;
 }
 
 .nav {
@@ -123,6 +127,16 @@ body {
 
 .contact a:hover {
     color: #0056b3;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item img {
+    width: 20px; /* Adjust size to your preference */
+    height: auto;
 }
 
 .footer {
